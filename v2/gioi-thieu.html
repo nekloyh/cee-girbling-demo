@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <title>Giới thiệu, Cee.girbling</title>
-  <meta name="description" content="Cee.girbling: fashion photographer, producer các dự án hình ảnh và mentor khoá học nhiếp ảnh tại Sài Gòn. Thương hiệu đã hợp tác và các dự án gần đây.">
+  <meta name="description" content="Cee.girbling: fashion photographer, producer các dự án hình ảnh và mentor khoá học nhiếp ảnh tại Sài Gòn. 15 album, phim thương hiệu và khoá học.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Giới thiệu, Cee.girbling">
-  <meta property="og:description" content="Fashion photographer, producer và mentor nhiếp ảnh. Biti's, Maybelline, Hades và các dự án gần đây.">
+  <meta property="og:description" content="Fashion photographer, producer và mentor nhiếp ảnh tại Sài Gòn.">
   <meta property="og:image" content="https://nekloyh.github.io/cee-girbling-demo/v2/media/og-image.jpg">
   <meta name="theme-color" content="#000000">
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preload" href="assets/fonts/mexcellent.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/NotoSerifDisplay-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/NotoSerifDisplay-roman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/site.css">
   <script>document.documentElement.classList.add("js")</script>
@@ -22,11 +23,10 @@
 <body>
   <a class="skip-link" href="#main">Bỏ qua phần đầu trang</a>
 
-  <header class="site-header site-header--dark">
+  <header class="site-header">
     <a class="brand" href="index.html" aria-label="Cee.girbling, trang chủ">CEE.GIRBLING</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Chính">
-      <a href="cong-viec.html">Công việc</a>
       <a href="gioi-thieu.html" aria-current="page">Giới thiệu</a>
       <a href="dich-vu.html">Dịch vụ</a>
       <a href="khoa-hoc-online.html">Khoá học</a>
@@ -35,71 +35,90 @@
   </header>
 
   <main id="main">
-    <section class="about-hero" data-progress="view" aria-labelledby="about-name">
-      <h1 class="visually-hidden" id="about-name">Ngan, Cee.girbling, fashion photographer</h1>
-      <figure class="portrait">
-        <img data-media="portrait" alt="Chân dung Cee.girbling" sizes="(max-width: 760px) 60vw, 30vw">
-      </figure>
-      <ul class="lines" aria-hidden="true">
-        <li>Ngan</li>
-        <li class="mark">CEE.GIRBLING</li>
-        <li>Photographer</li>
-        <li>Fashion</li>
-      </ul>
-    </section>
-
-    <section class="section" aria-labelledby="bio-title">
-      <div class="wrap">
-        <h2 class="visually-hidden" id="bio-title">Tiểu sử</h2>
-        <p class="bio">Bắt đầu với nhiếp ảnh đến nay đã hơn 4 năm, hiện tại mình làm nhiều vai trò: mentor cho các khoá học nhiếp ảnh, producer các dự án sản xuất hình ảnh, fashion photographer hợp tác với các nhãn hàng như Biti's Việt Nam, Maybelline, Hades. Ngoài ra mình là content creator mảng nhiếp ảnh với gần 80.000 người theo dõi.</p>
+    <!-- Cover: full-bleed portrait settles into a print while the bio lights up beside it -->
+    <section class="cover" data-progress="pin" aria-labelledby="cover-title">
+      <div class="cover-sticky">
+        <figure class="cover-photo">
+          <img data-media="portrait" alt="Chân dung Cee.girbling" sizes="100vw" fetchpriority="high">
+        </figure>
+        <p class="cover-mast" aria-hidden="true">CEE.GIRBLING</p>
+        <div class="cover-lines">
+          <h1 id="cover-title">Ngan</h1>
+          <p>Fashion photographer, producer, mentor<br>Sài Gòn</p>
+        </div>
+        <div class="cover-bio">
+          <p class="bio">Bắt đầu với nhiếp ảnh đến nay đã hơn 4 năm, hiện tại mình làm nhiều vai trò: mentor cho các khoá học nhiếp ảnh, producer các dự án sản xuất hình ảnh, fashion photographer hợp tác với các nhãn hàng như Biti's Việt Nam, Maybelline, Hades. Ngoài ra mình là content creator mảng nhiếp ảnh với gần 80.000 người theo dõi.</p>
+          <p class="meta">Cee.girbling, @cee.girbling</p>
+        </div>
       </div>
     </section>
 
+    <!-- Photographer: every album, as a contents page -->
+    <section class="section" id="nhiep-anh" aria-labelledby="folio-title">
+      <div class="wrap">
+        <div class="section-head" style="margin-bottom: 0">
+          <h2 class="display display--l" id="folio-title" data-reveal="rise">Fashion photographer</h2>
+          <p class="lead" style="margin: 0; max-width: 26em">15 album lookbook, campaign, commercial và catalogue. Chọn một album để xem trọn bộ.</p>
+        </div>
+        <div class="filters" id="folio-filters" aria-label="Lọc theo thể loại"></div>
+        <div class="folio-grid">
+          <ol class="folio-list" id="folio-list"></ol>
+          <button class="folio-preview" type="button">
+            <span class="folio-frame"></span>
+            <span class="folio-caption"><span class="title"></span><span class="meta"></span></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Producer: brand board drives the film stage -->
     <section class="section on-dark" id="thuong-hieu" aria-labelledby="brand-title">
       <div class="wrap">
         <div class="section-head">
-          <h2 class="display display--l" id="brand-title">Thương hiệu đã hợp tác</h2>
-          <p class="meta">Bấm vào thương hiệu có phim hoặc ảnh để xem ở khung bên dưới.</p>
+          <h2 class="display display--l" id="brand-title" data-reveal="rise">Producer</h2>
+          <p class="lead" style="margin: 0; max-width: 26em">Phim và hình ảnh cho thương hiệu. Chọn một thương hiệu để xem.</p>
         </div>
-        <ul class="board flip">
-          <li><button type="button" aria-pressed="false" style="--i: 0" data-label="Biti's Hunter" data-src="media/brand/bitis-hunter.mp4" data-poster="media/brand/bitis-hunter.webp"><span class="name">BITI'S HUNTER</span><span class="kind">Phim quảng cáo</span></button></li>
-          <li><button type="button" aria-pressed="false" style="--i: 1" data-label="Gosto" data-src="media/brand/gosto.mp4" data-poster="media/brand/gosto.webp"><span class="name">GOSTO</span><span class="kind">Phim quảng cáo</span></button></li>
-          <li><button type="button" aria-pressed="false" style="--i: 2" data-label="Highlands Coffee" data-src="media/brand/highlands.mp4" data-poster="media/brand/highlands.webp" data-wide><span class="name">HIGHLANDS COFFEE</span><span class="kind">Phim quảng cáo</span></button></li>
-          <li><button type="button" aria-pressed="false" style="--i: 3" data-label="Maybelline" data-album="maybelline"><span class="name">MAYBELLINE</span><span class="kind">Bộ ảnh commercial</span></button></li>
-          <li><button type="button" aria-pressed="false" style="--i: 4" data-label="Biti's" data-album="bitis"><span class="name">BITI'S</span><span class="kind">Bộ ảnh commercial</span></button></li>
-          <li><span class="cell" style="--i: 5"><span class="name">APPLE</span><span class="kind">Đối tác</span></span></li>
-          <li><span class="cell" style="--i: 6"><span class="name">SAMSUNG</span><span class="kind">Đối tác</span></span></li>
-          <li><span class="cell" style="--i: 7"><span class="name">HADES</span><span class="kind">Đối tác</span></span></li>
-          <li><span class="cell" style="--i: 8"><span class="name">COBES</span><span class="kind">Đối tác</span></span></li>
-        </ul>
-        <div class="stage" aria-live="polite">
-          <div class="stage-bar">
-            <p class="title stage-name"></p>
-            <p class="meta stage-kind"></p>
+        <div class="films-grid">
+          <ul class="board flip">
+            <li><button type="button" aria-pressed="false" style="--i: 0" data-label="Biti's Hunter" data-src="media/brand/bitis-hunter.mp4" data-poster="media/brand/bitis-hunter.webp"><span class="name">BITI'S HUNTER</span><span class="kind">Phim quảng cáo</span></button></li>
+            <li><button type="button" aria-pressed="false" style="--i: 1" data-label="Gosto" data-src="media/brand/gosto.mp4" data-poster="media/brand/gosto.webp"><span class="name">GOSTO</span><span class="kind">Phim quảng cáo</span></button></li>
+            <li><button type="button" aria-pressed="false" style="--i: 2" data-label="Highlands Coffee" data-src="media/brand/highlands.mp4" data-poster="media/brand/highlands.webp" data-wide><span class="name">HIGHLANDS COFFEE</span><span class="kind">Phim quảng cáo</span></button></li>
+            <li><button type="button" aria-pressed="false" style="--i: 3" data-label="Maybelline" data-album="maybelline"><span class="name">MAYBELLINE</span><span class="kind">Bộ ảnh commercial</span></button></li>
+            <li><button type="button" aria-pressed="false" style="--i: 4" data-label="Biti's" data-album="bitis"><span class="name">BITI'S</span><span class="kind">Bộ ảnh commercial</span></button></li>
+            <li><span class="cell" style="--i: 5"><span class="name">APPLE</span><span class="kind">Đối tác</span></span></li>
+            <li><span class="cell" style="--i: 6"><span class="name">SAMSUNG</span><span class="kind">Đối tác</span></span></li>
+            <li><span class="cell" style="--i: 7"><span class="name">HADES</span><span class="kind">Đối tác</span></span></li>
+            <li><span class="cell" style="--i: 8"><span class="name">COBES</span><span class="kind">Đối tác</span></span></li>
+          </ul>
+          <div class="stage" aria-live="polite">
+            <div class="stage-bar">
+              <p class="title stage-name"></p>
+              <p class="meta stage-kind"></p>
+            </div>
+            <div class="stage-screen"></div>
           </div>
-          <div class="stage-screen"></div>
         </div>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="works-title">
-      <div class="ticker" aria-hidden="true"><p>Recent works • Recent works • Recent works • Recent works • Recent works • Recent works • Recent works • Recent works • </p></div>
-      <h2 class="visually-hidden" id="works-title">Dự án gần đây</h2>
-      <div class="wrap">
-        <ul class="works" data-kind="works" data-albums="simple-girl jennie bitis maybelline art couple olympic classic"></ul>
+    <!-- Mentor -->
+    <section class="section mentor" aria-labelledby="mentor-title">
+      <div class="wrap grid">
+        <figure class="mentor-reel" data-reveal="wipe">
+          <video data-src="media/reels/home-720.mp4" poster="media/reels/home.webp" muted loop playsinline preload="none" aria-hidden="true"></video>
+          <figcaption class="meta">Hậu trường buổi thực hành ngoài trời và chỉnh màu.</figcaption>
+        </figure>
+        <div class="mentor-body">
+          <h2 class="display display--l" id="mentor-title" data-reveal="rise">Mentor</h2>
+          <p class="lead">Những gì học được từ các buổi chụp cho thương hiệu, Cee chia sẻ lại trong hai khoá học: từ điều khiển máy ảnh, ánh sáng, làm việc với mẫu đến chỉnh màu và retouch.</p>
+          <ul class="mentor-links">
+            <li><a href="khoa-hoc-online.html"><span class="title">Khoá online</span><span class="meta">8 phần video bài giảng</span></a></li>
+            <li><a href="khoa-hoc-offline.html"><span class="title">Khoá offline tại Sài Gòn</span><span class="meta">10 buổi học trực tiếp</span></a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
-
-  <dialog class="lightbox" id="lightbox" aria-label="Xem ảnh">
-    <div class="lb-bar">
-      <p class="title">Album<span class="lb-count"></span></p>
-      <button class="lb-close" type="button">Đóng</button>
-    </div>
-    <button class="lb-step lb-prev" type="button" aria-label="Ảnh trước">‹</button>
-    <figure class="lb-stage"><img alt=""></figure>
-    <button class="lb-step lb-next" type="button" aria-label="Ảnh sau">›</button>
-  </dialog>
 
   <footer class="site-footer on-dark" id="lien-he">
     <div class="wrap">
