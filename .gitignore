@@ -1,0 +1,2 @@
+# The site ships its own videos; override the global *.mp4 ignore.
+!*.mp4
