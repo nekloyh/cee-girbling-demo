@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Cee.girbling, hai phương án website</title>
+  <meta name="description" content="Phương án 1: website hiện tại đã sửa ảnh. Phương án 2: demo nâng cấp 3 trang.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cee.girbling, hai phương án website">
+  <meta property="og:description" content="Phương án 1: website hiện tại đã sửa ảnh. Phương án 2: demo nâng cấp gồm trang chủ, công việc và khoá học.">
+  <meta property="og:image" content="https://nekloyh.github.io/cee-girbling-demo/v2/media/og-image.jpg">
+  <link rel="icon" href="v2/assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="v2/assets/site.css">
+  <style>
+    .choose { min-height: 100svh; display: flex; flex-direction: column; justify-content: center; padding-block: 56px; }
+    .options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--gap); margin-top: clamp(40px, 6vw, 88px); border-top: 1px solid var(--rule); }
+    .option { padding-top: 28px; }
+    .option p { max-width: 30em; }
+    .option ul { margin: 16px 0 28px; padding-left: 1.1em; }
+    .option li + li { margin-top: 6px; }
+    @media (max-width: 760px) { .options { grid-template-columns: 1fr; gap: 48px; } }
+  </style>
+</head>
+<body>
+  <main class="wrap choose">
+    <p class="brand">CEE.GIRBLING</p>
+    <h1 class="display display--xl" style="margin-top: 32px">Hai phương án website</h1>
+    <div class="options">
+      <section class="option" aria-labelledby="o1">
+        <h2 class="title" id="o1">Phương án 1: giữ thiết kế hiện tại</h2>
+        <p>Website đang chạy, sửa toàn bộ chỗ hỏng và điền ảnh còn thiếu.</p>
+        <ul>
+          <li>Trang About: thay 8 dự án mẫu của template bằng album thật</li>
+          <li>Bỏ 53 ảnh đã mất trên Pixieset khỏi các album và lightbox</li>
+          <li>Sửa lỗi ảnh không hiện ở một số kích thước màn hình</li>
+          <li>Toàn bộ ảnh và video lưu trên cùng hosting, không phụ thuộc Pixieset, Wix, Webflow</li>
+        </ul>
+        <a class="btn btn--line" href="v1/index.html">Xem phương án 1</a>
+      </section>
+      <section class="option" aria-labelledby="o2">
+        <h2 class="title" id="o2">Phương án 2: nâng cấp (demo 3 trang)</h2>
+        <p>Thiết kế mới dựng từ chính màu sắc và chất ảnh của Cee, chạy tốt trên điện thoại.</p>
+        <ul>
+          <li>Trang chủ mở bằng 3 reels, kèm bảng giá chụp</li>
+          <li>Trang công việc: 15 album, lọc theo thể loại, xem ảnh lớn</li>
+          <li>Trang khoá học: so sánh online và offline, nút đăng ký luôn trong tầm tay</li>
+          <li>Thêm ảnh mới chỉ cần sửa một file dữ liệu</li>
+        </ul>
+        <a class="btn" href="v2/index.html">Xem phương án 2</a>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

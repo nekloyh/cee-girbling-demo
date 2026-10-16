@@ -1,0 +1,240 @@
+        html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    margin-top: -50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(1);
+}
+
+.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 0 10px 50px #630707;
+}
+
+        
+        
+h1 {
+    font-size: calc(5rem + 5vw);
+    margin: 0;
+    opacity: 33%;
+    animation: animationBlur 5s linear infinite;
+                font-family: 'mexcellent rg', sans-serif;
+
+}
+
+@keyframes animationBlur {
+          0% {
+                transform: translateX(135%);
+            }
+            100% {
+                transform: translateX(-135%);
+            }
+        }
+
+        html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    margin-top: -50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 0 10px 50px #630707;
+}
+
+        
+        
+h1 {
+    font-size: calc(5rem + 5vw);
+    margin: 0;
+    opacity: 33%;
+    animation: animationBlur 5s linear infinite;
+                font-family: 'mexcellent rg', sans-serif;
+
+}
+
+@keyframes animationBlur {
+          0% {
+                transform: translateX(135%);
+            }
+            100% {
+                transform: translateX(-135%);
+            }
+        }
+
+        html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    margin-top: -50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 0 10px 50px #630707;
+}
+
+        
+        
+h1 {
+    font-size: calc(5rem + 5vw);
+    margin: 0;
+    opacity: 33%;
+    animation: animationBlur 5s linear infinite;
+                font-family: 'mexcellent rg', sans-serif;
+
+}
+
+@keyframes animationBlur {
+          0% {
+                transform: translateX(135%);
+            }
+            100% {
+                transform: translateX(-135%);
+            }
+        }
+
+        html, body {
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    margin-top: -50px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(1);
+}
+
+.content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 0 10px 50px #630707;
+}
+
+        
+        
+h1 {
+    font-size: calc(5rem + 5vw);
+    margin: 0;
+    opacity: 33%;
+    animation: animationBlur 5s linear infinite;
+                font-family: 'mexcellent rg', sans-serif;
+
+}
+
+@keyframes animationBlur {
+          0% {
+                transform: translateX(135%);
+            }
+            100% {
+                transform: translateX(-135%);
+            }
+        }
+
